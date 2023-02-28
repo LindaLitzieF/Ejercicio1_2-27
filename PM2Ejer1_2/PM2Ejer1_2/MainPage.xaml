@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2Ejer1_2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#ff000000"
+               Padding="24"
+               CornerRadius="0">
+
+            <Label Text="Linda Litzie Flores Rivera " HorizontalTextAlignment="Center" TextColor="White" Margin="10" FontSize="18"/>
+            
+        </Frame>
+
+        <Label Text="Nombre:" TextColor="Black" FontSize="20"/>
+
+        <Entry x:Name="txtnombre"
+               Keyboard="Plain"
+               Placeholder="Ingrese su Nombre" 
+               VerticalOptions="CenterAndExpand" 
+               Margin="10"/>
+        
+        
+        
+        <Label Text="Apellidos:" TextColor="Black" FontSize="20"/>
+        <Entry Keyboard="Plain"
+               Placeholder="Ingrese sus Apellidos"
+               VerticalOptions="CenterAndExpand"
+               x:Name="txtapellidos"
+               Margin="10"/>
+        
+        
+        <Label Text="Edad:" TextColor="Black" FontSize="20"/>
+        <Entry Keyboard="Numeric"
+               Placeholder="Ingrese su Edad"
+               VerticalOptions="CenterAndExpand"
+               x:Name="txtedad" 
+               Margin="10"/>
+
+
+        <Label Text="Correo Electrónico:" TextColor="Black" Margin="5" FontSize="20"/>
+        <Entry Keyboard="Plain"
+               Placeholder="Ingrese su correo electronico" 
+               VerticalOptions=
+               "CenterAndExpand" 
+               x:Name="txtemail" 
+               Margin="15"/>
+        
+        
+        <Button Text="Enviar informacion" x:Name="btnpagina"
+                Clicked="btnpagina_Clicked" CornerRadius="15"
+                Background="Black" 
+                TextColor="White" Margin="5" />
+    </StackLayout>
+
+</ContentPage>

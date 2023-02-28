@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2Ejer1_2.PageMain">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Frame BackgroundColor="#ff000000"
+               Padding="24"
+               CornerRadius="0">
+
+                <Label Text="Linda Litzie Flores Rivera " HorizontalTextAlignment="Center" TextColor="White" Margin="10" FontSize="18"/>
+
+            </Frame>
+            
+            
+            <Label Text="Nombre:" FontSize="18" FontAttributes="Bold" />
+            <Label Text="{Binding Nombre}" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand"  FontSize="16" />
+
+
+            <Label Text="Apellidos:" FontSize="18" FontAttributes="Bold"/>
+            <Label Text="{Binding Apellidos}" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand"  FontSize="16" />
+
+            <Label Text="Edad:" FontSize="18" FontAttributes="Bold"/>
+            <Label Text="{Binding Edad}"  VerticalOptions="Center"  HorizontalOptions="CenterAndExpand"  FontSize="16"/>
+
+
+            <Label Text="Email:"  FontSize="18" FontAttributes="Bold"/>
+            <Label Text="{Binding Email}" VerticalOptions="Center"  HorizontalOptions="CenterAndExpand"  FontSize="16"  />
+                
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
